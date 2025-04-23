@@ -43,19 +43,19 @@ document.getElementById('array').innerHTML = car[ car.length - 1 ] ;
 console.log(typeof car);
 
 
-let alength = car.length ;
-let list = '<ul>';
+// let alength = car.length ;
+// let list = '<ul>';
 
-let i;
+// let i;
 
-for( i = 0 , i <= alength , i ++)
-{
-    list += '<li>' + car[i] + '</li>';
-}
+// for( i = 0 , i <= alength , i ++)
+// {
+//     list += '<li>' + car[i] + '</li>';
+// }
 
-list += '</ul>';
+// list += '</ul>';
 
-console.log(list);
+// console.log(list);
 
 // array loop
 
