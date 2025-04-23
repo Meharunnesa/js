@@ -68,3 +68,24 @@
     margin-bottom: 50px;
     display: none;
 }
+
+.remove {
+    height: auto;
+    background-color: bisque;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add{
+    height: auto;
+    background-color: bisque;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: brown;
+    letter-spacing: 10px;
+}

@@ -176,3 +176,29 @@ $(document).ready(function(){
         $('.add-text').prepend("<b>hi</b>");
     });
 });
+
+// remove
+
+$(document).ready(function(){
+    $('.remove-btn').click(function(){
+        $('.remove').remove();
+    });
+
+    $('.emt-btn').click(function(){
+        $('.remove').empty();
+    });
+});
+
+
+// add css class
+
+$(document).ready(function(){
+    $('.css-btn').click(function(){
+        $('.add-css').addClass("add");
+    });
+
+    $('.css-remove-btn').click(function(){
+        $('.add-css').removeClass("add");
+    });
+
+});
