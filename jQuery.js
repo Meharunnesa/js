@@ -8,7 +8,7 @@ $(document).ready(function(){
     })
 });
 
-// events
+// events anf callback
 
 $(document).ready(function(){
    $('.events').dblclick(function(){
@@ -16,8 +16,13 @@ $(document).ready(function(){
    }),
 
    $('.hide').mouseenter(function(){
-    alert("If you click here this text will be hide!!");
-    $('.content').hide('slow');
+        alert("If you click here this text will be hide!!");//without callback
+        $('.content').hide('slow');
+
+        //with callback
+        // $('.content').hide('slow', function(){ 
+        //     alert("If you click here this text will be hide!!");
+        // });
    }),
 
    $('.events').mouseleave(function(){
@@ -62,10 +67,51 @@ $(document).ready(function(){
     })
 });
 
-// slide
+// slide & stop()
 
 $(document).ready(function(){
     $('.slide').click(function(){
-        $('.slide-content').slideToggle('slow');
+        $('.slide-content').slideToggle(3000);
     })
+
+    $('.stop').click(function(){
+        $('.slide-content').stop();
+    })
+});
+
+// animation
+
+$(document).ready(function(){
+    $('.animation').click(function(){
+        $('.animation-container-1').animate({
+            width : "toggle"
+        }, "slow");
+
+        var move = $('.animation-container-2');
+
+        move.animate({
+            left : '300px',
+            width : '100px',
+            opacity : 'o.1'
+        }, "slow");
+
+        move.animate({
+            top : "200px",
+            height : '100px',
+            opacity : "o.5"
+        }, "slow");
+
+        move.animate({
+            left : "0px",
+            height : '-=50px',
+            opacity : "o.7"
+        }, "slow");
+
+        move.animate({
+            top : "0px",
+            width : '-=50px',
+            opacity : "1"
+        }, "slow");
+
+    })   
 });
