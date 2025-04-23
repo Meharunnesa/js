@@ -57,3 +57,48 @@ list += '</ul>';
 
 console.log(list);
 
+// array loop
+
+let carlen = cars.length;
+
+text = "<ul>";
+
+for(let i = 0 ; i < carlen ; i++){
+    text += "<li>" + cars[i] + "</li>";
+}
+
+text += "</ul>";
+
+document.getElementById('demo').innerHTML = text;
+
+// array foreach
+
+function myFunction(value){
+    console.log(value);
+}
+
+cars.forEach(myFunction);
+
+
+// array push
+
+cars.push("bristy");
+console.log(cars);
+
+cars[cars.length] = "meharun" ;
+console.log(cars);
+
+// checking array or not array
+
+console.log(Array.isArray(cars));
+
+console.log(Array.isArray(person));
+
+console.log(cars instanceof Array);
+
+console.log(cars instanceof Object);
+
+console.log(person instanceof Array);
+
+console.log(person instanceof Object);
+
