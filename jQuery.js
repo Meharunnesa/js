@@ -51,3 +51,21 @@ $(document).ready(function(){
         }
     });
 });
+
+// fade
+
+$(document).ready(function(){
+    $('.fade').click(function(){
+        $('.fade-1').fadeIn();
+        $('.fade-2').fadeIn('slow');
+        $('.fade-3').fadeIn(3000);
+    })
+});
+
+// slide
+
+$(document).ready(function(){
+    $('.slide').click(function(){
+        $('.slide-content').slideToggle('slow');
+    })
+});
