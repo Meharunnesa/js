@@ -58,3 +58,13 @@
     display: block;
     position: relative;
 }
+
+.chain-btn {
+    margin-top: 200px;
+}
+
+.chain {
+    padding:20px;
+    margin-bottom: 50px;
+    display: none;
+}
